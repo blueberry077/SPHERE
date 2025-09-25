@@ -1,0 +1,8 @@
+CXX = g++
+SOURCE = src/Main.cc
+BUILD = sphere
+INCLUDE = -Iinclude
+LIB = -Llib -lglfw3dll -lmgl
+
+task build
+	cmd $(CXX) -o $(BUILD) $(SOURCE) $(INCLUDE) $(LIB)
